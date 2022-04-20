@@ -9,14 +9,11 @@
 
 pluginManagement {
     includeBuild("build-logic-dependencies")
-
-    repositories {
-        mavenCentral()
-    }
 }
 
 rootProject.name = "gradle-20388-multiple-toml"
 
 plugins {
-    id("dependencies")
+    // Apply the common dependencies plugin
+    id("versionCatalog")
 }

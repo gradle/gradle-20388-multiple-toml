@@ -2,6 +2,9 @@ package dependencies
 
 import org.gradle.api.initialization.dsl.VersionCatalogBuilder
 
+/**
+ * A simple function consuming a [VersionCatalogBuilder] in order to add versions/dependencies to it.
+ */
 fun applyATeamDependencies(catalogBuilder: VersionCatalogBuilder) {
     catalogBuilder.apply {
         // Versions
